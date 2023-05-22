@@ -198,6 +198,13 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+
         title: Text(widget.team.name),
       ),
       body: Padding(
@@ -239,7 +246,7 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> {
               style: TextStyle(fontSize: 18.0),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 IconButton(
                   icon: Icon(Icons.star_border),

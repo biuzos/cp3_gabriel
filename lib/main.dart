@@ -210,7 +210,7 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> {
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(
               widget.team.logoUrl,
@@ -246,7 +246,7 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> {
               style: TextStyle(fontSize: 18.0),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   icon: Icon(Icons.star_border),
